@@ -9,6 +9,7 @@ export class MovieService {
 
   constructor(private http:HttpClient) { }
 
+  //HTTPS request
   getMovieData(): Observable<any> {
     return this.http.get("https://www.omdbapi.com/?apikey=2ee2ed84&s=%27war%27");
   }
